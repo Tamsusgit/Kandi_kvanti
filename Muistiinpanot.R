@@ -105,14 +105,28 @@ summary(sademalli) # saadaan samat tiedot kun statassa
 malli1 <- lm(SR_vp ~ rr_annual + weathering, data=dat_RG) #KOlmen muuttujan
 
 
-# ------------------------------------------------------------ TÖISTÄ -----------------------------------------------------
+# ------------------------------------------------------------ ADDITIONS ---------------------------------------------------
 
 # Katso, mitä funktioita paketissa on
 ls("package:sensorThings4R")
+
+# Normi plotit tällä
+plot(x = obs_dup$phenomenonTime,
+  y = obs_dup$result,
+  main = "Observations",
+  xlab = "Time",
+  ylab = " Temperature",
+  # xlim = min(obs_dup$phenomenonTime), max(obs_dup$phenomenonTime),
+  col = "#6E8CFB", #Border color
+  #bg = "#3C467B", #Inner color
+  lwd = 2, # linewidth
+  pch = 21 # Colored circle with border, https://www.sthda.com/english/wiki/r-plot-pch-symbols-the-different-point-shapes-available-in-r?title=r-plot-pch-symbols-the-different-point-shapes-available-in-r
+)
 
 
 
 
 
  
+
 
