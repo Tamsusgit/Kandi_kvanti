@@ -116,7 +116,6 @@ plot(x = obs_dup$phenomenonTime,
   main = "Observations",
   xlab = "Time",
   ylab = " Temperature",
-  # xlim = min(obs_dup$phenomenonTime), max(obs_dup$phenomenonTime),
   col = "#6E8CFB", #Border color
   #bg = "#3C467B", #Inner color
   lwd = 2, # linewidth
@@ -128,5 +127,6 @@ plot(x = obs_dup$phenomenonTime,
 
 
  
+
 
 
